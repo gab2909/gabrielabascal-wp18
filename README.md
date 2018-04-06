@@ -1,6 +1,6 @@
 # gabrielabascal-wp18
 
-welcome!
+welcome
 
 assignment 1
 https://gab2909.github.io/gabrielabascal-wp18/gabriel_assignment1_part1.html
