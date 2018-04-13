@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <title>Media Query 360px</title>
+  <style>
+
+  section {
+      display: flex;
+      flex-direction: row}
+
+
+      div { flex: 100px; height: 400px; margin: 0; }
+  .a {
+           background:red;
+   }
+
+   .b {
+        background: blue;
+        display: flex;
+        justify-content: center;
+
+}
+  .c {
+        background: red;
+  }
+
+  .d {
+        background: blue;
+  }
+
+  img {
+  width: 110px; height: 200px;
+  display: block;
+  align-self: center;
+  }
+
+  @media (max-width: 360px) {
+    .a { background:linear-gradient(red,blue);
+    }
+    .b { background:linear-gradient(blue,red);
+    }
+    .c { background:linear-gradient(red,blue);
+    }
+    .d { background:linear-gradient(blue,red);
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+  <section>
+
+
+  <div class="a"></div>
+  <div class="b">
+    <img src="file:///Users/gabrielabascal/Documents/GitHub/wp18/img/star2.svg">
+  </div>
+  <div class="c"></div>
+  <div class="d"></div>
+
+</section>
+
+</body>
+
+</html>

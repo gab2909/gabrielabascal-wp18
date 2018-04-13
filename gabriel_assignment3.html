@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>
+    Animation
+  </title>
+</head>
+
+<body>
+  <style>
+
+
+
+.element {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.5);
+    background-color: blue;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: mediumblue;
+  }
+  100% {
+    transform: scale(2.5);
+    background-color: blue;
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-color: mediumblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+</style>
+</body>
+<div class="element"></div>
+</body>
+
+</html>
