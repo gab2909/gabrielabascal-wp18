@@ -1,0 +1,119 @@
+<html>
+
+<head>
+<title>Gabriel Abascal</title>
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<style>
+body {background:linear-gradient(lightgray, gray);
+  margin: 10px;
+  }
+.main {display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  grid-template-rows: auto auto; }
+
+  a {
+      color: fuchsia;
+  }
+
+body {font-family: 'Poppins', sans-serif; color: #37383a;}
+h1.title {font-size: 70pt; padding-left: 400px; padding-right: 5px; padding-top: 10px; margin: 0;
+ line-height: .9;}
+h3 {font-size: 30pt; }
+h4 {line-height: .97; color: gray;}
+
+.week > .preview {
+  display: none;
+}
+
+.week {
+  width: 100%;
+  height:100%;
+}
+
+.week > * {
+  display: grid;
+  width: 35%;
+}
+
+.week-item {
+  vertical-align: bottom;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="main">
+  <div>
+    <h1 class="Title">Gabriel Abascal Gabriel Abascal Gabriel Abascal Gabriel Abascal Gabriel Abascal Gabriel Abascal Gabriel Abascal Gabriel Abascal Gabriel Abascal Gabriel Abascal</h1>
+  </div>
+
+
+
+  <div>
+    <div class="week">
+      <div class="week-item">
+            <h3 class="Firstweek"><a href="week1.gif">1</a></h3>
+            <h4 class="inclass_1">Introduction to basic HTML & CSS. Basic layouts, positioning, and padding were also discussed. For homework, the group was expected to create five distinct compositions using HTML & CSS.
+</h4>
+      </div>
+      <div class="preview" id="preview1">
+          <iframe src="week1.gif"></iframe>
+      </div>
+    </div>
+    <div class="week">
+      <div class="week-item">
+            <h3 class="Secondweek"><a href="week2.gif">2</a></h3>
+            <h4 class="inclass_2">Grids, grids, grids. Everything about this week was related to grids. The homework assignment consisted of exploring grids with regard to color and transparency, creating interesting compositions.</h4>
+      </div>
+      <div class="preview" id="preview2">
+          <iframe src="week2.gif"></iframe>
+      </div>
+    </div>
+    <div class="week">
+      <div class="week-item">
+          <h3 class="Thirdweek"><a href="week3.gif">3</a></h3>
+          <h4 class="inclass_3">After reviewing previous assignments, flexboxes were introduced. Following that, media queries were discussed. Animation became the focus of the latter part of the class, with students thinking of ways of bringing the viewer further into a site. The homework consisted of an animated web site.</h4>
+      </div>
+      <div class="preview" id="preview3">
+          <iframe src="week3.gif"></iframe>
+      </div>
+    </div>
+    <div class="week">
+        <div class="week-item">
+            <h3 class="Fourthweek"><a href="week4.gif">4</a></h3>
+            <h4 class="inclass_4">The final class consisted of incorporating SVGs into websites. After working with John's risographed candycane, the class discussed potential ways of making their final websites stronger and more consistent.</h4>
+        </div>
+        <div class="preview" id="preview4">
+            <iframe src="week4.gif"></iframe>
+        </div>
+    </div>
+  </div>
+
+</div>
+<script>
+  $(".Firstweek").hover(function() {
+    $("#preview1").stop(true, true).show(400).css("display", "inline-block");
+  }, function() {
+    $("#preview1").stop(true, true).hide(50);
+  });
+  $(".Secondweek").hover(function() {
+    $("#preview2").stop(true, true).show(400).css("display", "inline-block");
+  }, function() {
+    $("#preview2").stop(true, true).hide(50);
+  });
+  $(".Thirdweek").hover(function() {
+    $("#preview3").stop(true, true).show(400).css("display", "inline-block");
+  }, function() {
+    $("#preview3").stop(true, true).hide(50);
+  });
+  $(".Fourthweek").hover(function() {
+    $("#preview4").stop(true, true).show(400).css("display", "inline-block");
+  }, function() {
+    $("#preview4").stop(true, true).hide(50);
+  });
+</script>
+
+</body>
+</html>
